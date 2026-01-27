@@ -1,0 +1,60 @@
+{
+  "name": "vue-create-global-state",
+  "version": "1.0.0",
+  "description": "Vue 3 global reactive state shared across all components",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "logo.svg",
+    "banner.svg"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "vue-3",
+    "composable",
+    "composition-api",
+    "vueuse",
+    "state",
+    "state-management",
+    "global-state",
+    "store",
+    "create",
+    "global",
+    "shared",
+    "singleton",
+    "cross-component",
+    "createGlobalState"
+  ],
+  "author": "VueFrag",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vuefrag/vue-create-global-state.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vuefrag/vue-create-global-state/issues"
+  },
+  "homepage": "https://github.com/vuefrag/vue-create-global-state#readme",
+  "peerDependencies": {
+    "vue": ">=3.0.0"
+  },
+  "devDependencies": {
+    "unbuild": "^2.0.0",
+    "typescript": "^5.0.0",
+    "vue": "^3.4.0"
+  }
+}
