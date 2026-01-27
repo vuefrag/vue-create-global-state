@@ -1,7 +1,7 @@
 {
   "name": "vue-create-global-state",
   "version": "1.0.0",
-  "description": "Vue 3 global reactive state shared across all components",
+  "description": "Vue 3 composable utility",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -15,7 +15,8 @@
   "files": [
     "dist",
     "logo.svg",
-    "banner.svg"
+    "banner.svg",
+    "README.md"
   ],
   "scripts": {
     "build": "unbuild",
@@ -23,22 +24,12 @@
     "postpublish": "cp README.github.md README.md"
   },
   "keywords": [
-    "vue",
-    "vue3",
-    "vue-3",
-    "composable",
-    "composition-api",
-    "vueuse",
-    "state",
-    "state-management",
-    "global-state",
-    "store",
-    "create",
     "global",
+    "state",
     "shared",
+    "store",
     "singleton",
-    "cross-component",
-    "createGlobalState"
+    "cross-component"
   ],
   "author": "VueFrag",
   "license": "MIT",
