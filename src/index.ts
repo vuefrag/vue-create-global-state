@@ -1,4 +1,6 @@
-import type { AnyFn } from '../utils'
+// Inlined types from @vueuse/shared/utils
+type AnyFn = (...args: any[]) => any
+
 import { effectScope } from 'vue'
 
 export type CreateGlobalStateReturn<Fn extends AnyFn = AnyFn> = Fn
