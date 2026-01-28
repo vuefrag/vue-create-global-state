@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="banner.svg" alt="vue-create-global-state" width="100%" />
+  <img src="https://raw.githubusercontent.com/vuefrag/vue-create-global-state/main/banner.svg" alt="vue-create-global-state" width="100%" />
 </p>
 
 <h1 align="center">vue-create-global-state</h1>
