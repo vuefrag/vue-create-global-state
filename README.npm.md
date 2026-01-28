@@ -4,7 +4,7 @@
 
 <h1 align="center">vue-create-global-state</h1>
 
-<p align="center"></p>
+<p align="center">A Vue 3 composition API utility for creating global reactive state that persists and synchronizes across all component instances without prop drilling or external state management libraries.</p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/vue-create-global-state"><img src="https://img.shields.io/npm/v/vue-create-global-state.svg" alt="npm version" /></a>
@@ -18,8 +18,6 @@ npm install vue-create-global-state
 ```
 
 ## Usage
-
-> **Note:** This example has been hand-crafted for clarity. Original example uses useStorage for persistence - providing memory-based alternative
 
 ```ts
 import { createGlobalState } from 'vue-create-global-state'

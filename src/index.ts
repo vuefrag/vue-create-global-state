@@ -1,4 +1,4 @@
-// Inlined types from @vueuse/shared/utils
+// Inlined from @vueuse/shared/utils
 type AnyFn = (...args: any[]) => any
 
 import { effectScope } from 'vue'

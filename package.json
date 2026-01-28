@@ -1,7 +1,7 @@
 {
   "name": "vue-create-global-state",
-  "version": "1.0.0",
-  "description": "Vue 3 composable utility",
+  "version": "1.0.1",
+  "description": "Vue 3 global reactive state shared across all components",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -24,6 +24,11 @@
     "postpublish": "cp README.github.md README.md"
   },
   "keywords": [
+    "vue",
+    "vue3",
+    "composition-api",
+    "composable",
+    "vueuse",
     "global",
     "state",
     "shared",
