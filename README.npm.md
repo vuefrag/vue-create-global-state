@@ -19,72 +19,26 @@ npm install vue-create-global-state
 
 ## Usage
 
-Keep states in the global scope to be reusable across Vue instances.
-
-### Without Persistence (Store in Memory)
+> **Note:** This example has been hand-crafted for clarity. Original example uses useStorage for persistence - providing memory-based alternative
 
 ```ts
-// store.ts
 import { createGlobalState } from 'vue-create-global-state'
-import { shallowRef } from 'vue'
+import { ref, computed } from 'vue'
 
-export const useGlobalState = createGlobalState(
-  () => {
-    const count = shallowRef(0)
-    return { count }
-  }
-)
-```
-
-A bigger example:
-
-```ts
-// store.ts
-import { createGlobalState } from 'vue-create-global-state'
-import { computed, shallowRef } from 'vue'
-
-export const useGlobalState = createGlobalState(
-  () => {
-    // state
-    const count = shallowRef(0)
-
-    // getters
-    const doubleCount = computed(() => count.value * 2)
-
-    // actions
-    function increment() {
-      count.value++
-    }
-
-    return { count, doubleCount, increment }
-  }
-)
-```
-
-### With Persistence
-
-Store in `localStorage` with `useStorage`:
-
-```ts
-// store.ts
-import { createGlobalState, useStorage } from 'vue-create-global-state'
-
-export const useGlobalState = createGlobalState(
-  () => useStorage('vueuse-local-storage', 'initialValue'),
-)
-```
-
-```ts
-// @filename: store.ts
-// component.ts
-import { useGlobalState } from './store'
-
-export default defineComponent({
-  setup() {
-    const state = useGlobalState()
-    return { state }
-  },
+export const useGlobalState = createGlobalState(() => {
+  const count = ref(0)
+  const doubled = computed(() => count.value * 2)
+  const increment = () => count.value++
+  
+  return { count, doubled, increment }
 })
+
+const state = useGlobalState()
+console.log(state.count.value) // 0
+
+state.increment()
+console.log(state.count.value) // 1
+console.log(state.doubled.value) // 2
 ```
 
 ## License
