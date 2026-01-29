@@ -1,6 +1,6 @@
 {
   "name": "vue-create-global-state",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Vue 3 global reactive state shared across all components",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
@@ -45,7 +45,7 @@
   },
   "homepage": "https://github.com/vuefrag/vue-create-global-state#readme",
   "peerDependencies": {
-    "vue": ">=3.0.0"
+    "vue": "^3.5.0"
   },
   "devDependencies": {
     "unbuild": "^2.0.0",
